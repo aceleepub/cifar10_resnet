@@ -4,12 +4,26 @@ The experiment is carried out on the data set CIFAR10. The network selected in t
 
 ## Start to train
 
-ResNet32, lerning_rate=1
-
+ResNet32, lerning_rate=0.1
 ```bash
-python -u trainer.py --epochs=100 --lr=0.1 --weight-decay=1e-5
+python -u trainer.py --epochs=100 --lr=0.1 --weight-decay=1e-4
 ```
-
 <div align="center">
   <img src="assets/fig_1.jpg"  width="500px" />
+</div>
+
+ResNet32, lerning_rate=0.3
+```bash
+python -u trainer.py --epochs=100 --lr=0.3 --weight-decay=1e-4
+```
+<div align="center">
+  <img src="assets/fig_2.jpg"  width="500px" />
+</div>
+
+ResNet32, lerning_rate=0.5
+```bash
+python -u trainer.py --epochs=100 --lr=0.5 --weight-decay=1e-4
+```
+<div align="center">
+  <img src="assets/fig_3.jpg"  width="500px" />
 </div>
